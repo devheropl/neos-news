@@ -1,0 +1,47 @@
+
+'DevHero.News:Box':
+  superTypes:
+    'TYPO3.Neos:Content': true
+  ui:
+    label: i18n
+    group: news
+    icon: icon-list
+    inlineEditable: true
+    inspector:
+      tabs:
+        news:
+          label: i18n
+          icon: icon-header
+          position: 1
+      groups:
+        news:
+          tab: news
+          label: i18n
+  properties:
+    list:
+      type: references
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: news
+          editorOptions:
+            nodeTypes:
+              - 'DevHero.News:List'
+    tags:
+      type: references
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: news
+          editorOptions:
+            nodeTypes:
+              - 'DevHero.News:Tag'
+    limit:
+      type: integer
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: news

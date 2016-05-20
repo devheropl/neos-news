@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="DevHero.News:NodeTypes" source-language="pl" datatype="plaintext">
+        <body>
+            <trans-unit id="ui.label" xml:space="preserve">
+				<source>Aktualność</source>
+            </trans-unit>
+            <trans-unit id="groups.author" xml:space="preserve">
+				<source>Autor</source>
+            </trans-unit>
+            <trans-unit id="groups.news" xml:space="preserve">
+				<source>Ustawienia aktualności</source>
+            </trans-unit>
+            <trans-unit id="properties.image" xml:space="preserve">
+				<source>Etykieta</source>
+            </trans-unit>
+            <trans-unit id="properties.author" xml:space="preserve">
+				<source>Autor</source>
+            </trans-unit>
+            <trans-unit id="properties.tags" xml:space="preserve">
+				<source>Powiązane tagi</source>
+            </trans-unit>
+            <trans-unit id="properties.publicatedAt" xml:space="preserve">
+				<source>Data publikacji</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

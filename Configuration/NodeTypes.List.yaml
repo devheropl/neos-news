@@ -1,0 +1,23 @@
+
+'DevHero.News:List':
+  superTypes:
+    'TYPO3.Neos.NodeTypes:Page': true
+  ui:
+    label: i18n
+    group: plugins
+    icon: icon-list
+    position: 2
+    inlineEditable: true
+    inspector:
+      tabs:
+        news:
+          label: i18n
+          icon: icon-header
+          position: 1
+      groups:
+        author:
+          tab: news
+          label: i18n
+        news:
+          tab: news
+          label: i18n

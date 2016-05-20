@@ -1,0 +1,49 @@
+
+'DevHero.News:Author':
+  superTypes:
+    'TYPO3.Neos.NodeTypes:Page': true
+  ui:
+    label: i18n
+    group: plugins
+    icon: icon-user
+    inlineEditable: true
+    position: 0
+    inspector:
+      tabs:
+        news:
+          label: i18n
+          icon: icon-user
+          position: 1
+      groups:
+        author:
+          tab: news
+          label: i18n
+  properties:
+    name:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: author
+      validation:
+        TYPO3.Neos/Validation/NotEmptyValidator: true
+    surname:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: author
+      validation:
+        TYPO3.Neos/Validation/NotEmptyValidator: true
+    birthDate:
+      type: DateTime
+      ui:
+        label: i18n
+        inspector:
+          editorOptions:
+            format: 'Y'
+          group: author
+      validation:
+        TYPO3.Neos/Validation/NotEmptyValidator: true

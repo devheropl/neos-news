@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="DevHero.News:NodeTypes" source-language="pl" datatype="plaintext">
+        <body>
+            <trans-unit id="ui.label" xml:space="preserve">
+				<source>Redaktor</source>
+            </trans-unit>
+
+            <trans-unit id="groups.author" xml:space="preserve">
+				<source>O autorze</source>
+            </trans-unit>
+            <trans-unit id="properties.name" xml:space="preserve">
+				<source>Imię</source>
+            </trans-unit>
+            <trans-unit id="properties.surname" xml:space="preserve">
+				<source>Nazwisko</source>
+            </trans-unit>
+            <trans-unit id="properties.birthDate" xml:space="preserve">
+				<source>Data urodzenia</source>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

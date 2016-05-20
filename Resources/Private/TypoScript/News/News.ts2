@@ -1,0 +1,14 @@
+prototype(DevHero.News:News){
+    publicatedAt = ${q(node).property('publicatedAt')}
+    title = ${q(node).property('title')}
+    author = ${q(node).property('author')}
+    tags = ${q(node).property('tags')}
+    image = ${q(node).property('image')}
+    description = ${q(node).property('description')}
+    main = ContentCollection {
+        nodePath = 'main'
+    }
+    node = ${node}
+    @override.configuration = ${Configuration.setting('DevHero.News.view.default')}
+    configuration = ${configuration}
+}

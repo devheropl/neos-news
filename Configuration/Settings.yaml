@@ -1,0 +1,35 @@
+
+TYPO3:
+  Neos:
+    userInterface:
+      translation:
+        autoInclude:
+          'DevHero.News': ['NodeTypes/*']
+    nodeTypes:
+      groups:
+        news:
+          position: 'end'
+          label: 'News'
+    typoScript:
+      autoInclude:
+        'DevHero.News': TRUE
+
+DevHero:
+  News:
+    view:
+      default:
+        dateFormat: 'd.m.Y H:i'
+
+      list:
+        pagination:
+          itemsPerPage: 6
+        sortProperty: 'publicatedAt'
+        sortOrder: 'DESC'
+        dateFormat: 'd.m.Y H:i'
+      box:
+        numberOfItems: 2
+        pagination:
+          itemsPerPage: 2
+          maximumNumberOfLinks: 5
+        sortProperty: 'publicatedAt'
+        sortOrder: 'DESC'

@@ -1,0 +1,6 @@
+prototype(DevHero.News:Tag) {
+
+    collection = ${q(site).find('[instanceof DevHero.News:News]').filterByReference('tags', node).get()}
+    @override.configuration = ${Configuration.setting('DevHero.News.view.list')}
+    configuration = ${configuration}
+}

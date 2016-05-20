@@ -1,0 +1,9 @@
+
+'DevHero.News:Tag':
+  superTypes:
+    'TYPO3.Neos.NodeTypes:Page': true
+  ui:
+    label: i18n
+    group: plugins
+    icon: icon-tag
+    inlineEditable: true

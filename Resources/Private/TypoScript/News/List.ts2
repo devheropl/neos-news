@@ -1,0 +1,11 @@
+prototype(DevHero.News:List) < prototype(Flowpack.Listable:Listable) {
+    collcetion = ${q(node).children('[instanceof DevHero.News:News]').sort('publicatedAt', ['DESC']).get()}
+    @override.configuration = ${Configuration.setting('DevHero.News.view.list')}
+    configuration = ${configuration}
+    node = ${node}
+
+    newsItem = DevHero.News:News
+    newsItem {
+        templatePath = 'resource://App.FireDept/Private/Templates/TypoScriptObjects/Item.html'
+    }
+}

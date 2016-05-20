@@ -1,0 +1,12 @@
+prototype(DevHero.News:Box) < prototype(Flowpack.Listable:Listable){
+    @override.configuration = ${Configuration.setting('DevHero.News.view.box')}
+    @context.limit = ${q(node).property('limit') ? q(node).property('limit') : configuration.numberOfItems}
+    target = ${q(node).property('list')}
+    collection = ${this.target ? q(this.target).children('[instanceof DevHero.News:News]').sort(configuration.sortProperty, configuration.sortOrder).get() : null}
+    configuration = ${configuration}
+    link = ${this.target ? q(this.target).get(0) : null}
+    newsItem = DevHero.News:News
+    newsItem {
+        templatePath = 'resource://App.FireDept/Private/Templates/TypoScriptObjects/Item.html'
+    }
+}

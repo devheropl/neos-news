@@ -1,0 +1,19 @@
+{namespace neos=TYPO3\Neos\ViewHelpers}
+<neos:contentElement.wrap>
+    <f:if condition="{author}">{author.label}</f:if>
+    <neos:contentElement.editable property="title" tag="h1"/>
+    {main -> f:format.raw()}
+    <f:if condition="{publicatedAt}">
+        <div>
+            <f:format.date format="{configuration.dateFormat}">{publicatedAt}</f:format.date>
+        </div>
+    </f:if>
+
+    <f:if condition="{tags}">
+        <ul>
+            <f:for each="{tags}" as="tag" iteration="tagIterator">
+                <a href="{neos:uri.node(node: tag)}">{tag.label}</a>
+            </f:for>
+        </ul>
+    </f:if>
+</neos:contentElement.wrap>

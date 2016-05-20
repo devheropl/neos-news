@@ -1,0 +1,21 @@
+
+prototype(TYPO3.Neos:PrimaryContent).news {
+    condition = ${q(documentNode).is('[instanceof DevHero.News:News]')}
+    type = 'DevHero.News:News'
+}
+
+prototype(TYPO3.Neos:PrimaryContent).list {
+    condition = ${q(documentNode).is('[instanceof DevHero.News:List]')}
+    type = 'DevHero.News:List'
+}
+
+prototype(TYPO3.Neos:PrimaryContent).tag {
+    condition = ${q(documentNode).is('[instanceof DevHero.News:Tag]')}
+    type = 'DevHero.News:Tag'
+}
+prototype(TYPO3.Neos:PrimaryContent).box {
+    condition = ${q(documentNode).is('[instanceof DevHero.News:Box]')}
+    type = 'DevHero.News:Box'
+}
+
+include: News/*
