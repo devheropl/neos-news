@@ -1,0 +1,28 @@
+{
+  "description": "Neos.io news package with tag and many containers support",
+  "type": "neos-package",
+  "license": "GPL-3.0+",
+  "require": {
+    "typo3/neos": "*",
+    "flowpack/listable": "*"
+  },
+  "authors": [
+    {
+      "name": "Łukasz Jurys",
+      "email": "lukasz@devhero.pl",
+      "homepage": "http://www.devhero.pl",
+      "role": "Developer"
+    }
+  ],
+  "name": "devheropl/neos-news",
+  "autoload": {
+    "psr-0": {
+      "DevHero\\News": "Classes/"
+    }
+  },
+  "extra": {
+    "neos": {
+      "package-key": "DevHero.News"
+    }
+  }
+}
