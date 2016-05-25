@@ -8,7 +8,12 @@
             <f:format.date format="{configuration.dateFormat}">{publicatedAt}</f:format.date>
         </div>
     </f:if>
+    <div>
+        <f:if condition="{newsPrev}">
+        <neos:link.node node="{newsPrev}">{f:translate(id:'previous',package:'DevHero.News')}</neos:link.node></f:if>
 
+        <f:if condition="{newsNext}"><neos:link.node node="{newsNext}">{f:translate(id:'next',package:'DevHero.News')}</neos:link.node></f:if>
+    </div>
     <f:if condition="{tags}">
         <ul>
             <f:for each="{tags}" as="tag" iteration="tagIterator">

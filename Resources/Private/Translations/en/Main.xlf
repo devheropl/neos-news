@@ -3,6 +3,14 @@
 	<file original="" product-name="DevHero.News" source-language="en" datatype="plaintext">
 		<body>
 
+
+			<trans-unit id="next" xml:space="preserve">
+				<source>Next news</source>
+            </trans-unit>
+
+			<trans-unit id="previous" xml:space="preserve">
+				<source>Previous news</source>
+            </trans-unit>
 		</body>
 	</file>
 </xliff>

@@ -8,6 +8,8 @@ prototype(DevHero.News:News){
     main = ContentCollection {
         nodePath = 'main'
     }
+    newsPrev = ${q(documentNode).prev('[instanceof DevHero.News:News]').get(0)}
+    newsNext = ${q(documentNode).next('[instanceof DevHero.News:News]').get(0)}
     node = ${node}
     @override.configuration = ${Configuration.setting('DevHero.News.view.default')}
     configuration = ${configuration}
